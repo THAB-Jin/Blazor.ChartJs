@@ -1,0 +1,38 @@
+﻿@page "/interop"
+@inject IJSRuntime JsRun
+
+
+<h3> JsBasic</h3>
+
+<div class="btn btn-primary" @onclick="AlertBox">Test 1</div>
+<div class="btn btn-primary" @onclick="AlertifyBox">Test 2</div>
+<div class="btn btn-primary" @onclick="AlertifyBox2">Test 3</div>
+
+<div class="btn btn-primary" @onclick="DisplayChart">Test 4</div>
+@code {
+    public string message { get; set; } = "clicked";
+
+    private async Task AlertBox()
+    {
+        await JsRun.InvokeAsync<bool>("confirm", message);
+    }
+
+    private async Task AlertifyBox()
+    {
+        await JsRun.InvokeAsync<bool>("alertify.confirm", message);
+    }
+
+    private async Task AlertifyBox2()
+    {
+
+        await JsRun.AlertifyAlert("This is my message!");
+    }
+
+    private async Task DisplayChart()
+    {
+        int[] data = new[]{1,2,3,4};
+        await JsRun.InvokeAsync<bool>("chart.config", "line", data);
+
+    }
+
+}

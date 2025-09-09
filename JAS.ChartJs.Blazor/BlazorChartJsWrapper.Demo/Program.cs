@@ -1,13 +1,16 @@
 using BlazorChartJsWrapper.Demo.Data;
+using ChartJsWrapper;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+//builder.Services.AddScoped<ExampleJsInterop>();
+
 
 var app = builder.Build();
 
