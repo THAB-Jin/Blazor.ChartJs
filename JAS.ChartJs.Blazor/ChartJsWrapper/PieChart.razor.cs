@@ -21,7 +21,7 @@ namespace ChartJsWrapper
             {
                 var config = new
                 {
-                    type = "bar",
+                    type = "pie",
                     data = new
                     {
                         labels = new[] { "Red", "Blue", "Yellow" },
@@ -37,12 +37,6 @@ namespace ChartJsWrapper
 
                 await ChartJs.InitChart("pieChart", config);
             }
-        }
-
-        private async Task DeleteChart()
-        {
-            await ChartJs.DisposeChart("pieChart");
-        }
-          
+        }        
     }
 }
