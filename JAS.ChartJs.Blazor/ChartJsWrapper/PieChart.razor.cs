@@ -39,7 +39,10 @@ namespace ChartJsWrapper
             }
         }
 
-        public async ValueTask DisposeAsync() =>
+        private async Task DeleteChart()
+        {
             await ChartJs.DisposeChart("pieChart");
+        }
+          
     }
 }
