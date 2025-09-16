@@ -19,6 +19,9 @@ namespace ChartJsWrapper.Common
 
 
     public abstract class ChartConfigBase<TOptions, TData> : ChartConfigBase
+    //where constraints :
+    //TOptions must inherit from BaseConfigOptions.
+    //TData must inherit from ChartData and have a new() constructor.
     where TOptions : BaseConfigOptions
     where TData : ChartData, new()
     {

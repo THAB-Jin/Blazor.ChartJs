@@ -8,15 +8,11 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common
 {
-    internal class ChartData
+    public class ChartData
     {
-        public ChartData()
-        {
             public List<string> Labels { get; } = new List<string>();
             public List<string> XLabels { get; } = new List<string>();
-            public List<string> YLabels { get;} = new List<string>();
-            public List<Dataset> Datasets { get; } = new List<Dataset>();
-        }
-
+            public List<string> YLabels { get; } = new List<string>();
+            public List<IDataset> Datasets { get; } = new List<IDataset>();
     }
 }
