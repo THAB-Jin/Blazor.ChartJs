@@ -9,7 +9,7 @@ namespace ChartJsWrapper.Common
 {
     public interface IDataset
     {
-        string Id { get; }
+        string datasetId { get; }
         ChartType Type { get; }
     }
 

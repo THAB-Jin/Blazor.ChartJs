@@ -1,4 +1,5 @@
 ﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
