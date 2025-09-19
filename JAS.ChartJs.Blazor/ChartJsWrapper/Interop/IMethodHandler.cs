@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChartJsWrapper.Common.Interop
+namespace ChartJsWrapper.Interop
 {
     public interface IMethodHandler<T> : IMethodHandler
         where T : Delegate

@@ -1,6 +1,6 @@
 ﻿using ChartJsWrapper.Common.Handlers;
-using ChartJsWrapper.Common.Interop;
 using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Interop;
 
 namespace ChartJsWrapper.Common.Options
 {

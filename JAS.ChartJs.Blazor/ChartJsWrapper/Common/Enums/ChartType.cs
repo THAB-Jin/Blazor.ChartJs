@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    public class ChartType
+    public class ChartType : StringEnum
     {
-        public static readonly ChartType Bar = new("bar");
-        public static readonly ChartType Pie = new("pie");
+        public static ChartType Bar => new ChartType("bar");
+        public static ChartType Pie => new ChartType("pie");
+        public static ChartType HorizontalBar => new ChartType("horizontalBar");
 
-        public string Value { get; }
-        private ChartType(string value) { Value = value; }
+        //Add more chart tzpes as needed
 
-        public override string ToString() => Value;
+        private ChartType(string stringValue) : base(stringValue) { }
     }
-
-
-    //there are ways to improve this class
-    //we could make it so that the enums are comparable etc...
-    //if this ever becomes necessary see mariusmuntean's github -> StringEnum.cs
 }

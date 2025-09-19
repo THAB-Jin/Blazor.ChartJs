@@ -35,4 +35,10 @@ namespace ChartJsWrapper.Common
         public TData Data { get; }
     }
 
+    public abstract class ChartConfigBase<TOptions> : ChartConfigBase
+        where TOptions : BaseConfigOptions
+    {
+        protected ChartConfigBase(ChartType chartType) : base(chartType) { }
+    }
+
 }
