@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    internal class Positions
+    public class Positions
     {
         public static readonly Positions Top = new("top");
         public static readonly Positions Left = new("left");

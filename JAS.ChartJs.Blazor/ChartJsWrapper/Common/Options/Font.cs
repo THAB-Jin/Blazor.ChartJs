@@ -2,7 +2,7 @@
 
 namespace ChartJsWrapper.Common.Options
 {
-    internal class Font
+    public class Font
     {
         public string Family { get; set; }
         public int? Size { get; set; }

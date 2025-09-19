@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BHrnjEl9KiZYRI6RO3nqAGHRF0pbNRcazC6VG6l4aRjlqGS6G4weIfRaEExTDcDllde86kR9wexIhrwn12GTSA==",
+  "dgSpecHash": "ZiHLd02ozyE4H1qiivlD1qBFG+4yf3w+3KO/xs/HRvnUtBhLh0vzJVcP8Kh/EGYMRQxipqoJq4U8QQRJNG2FdA==",
   "success": true,
   "projectFilePath": "C:\\Workplace\\KM\\MDE_MMS\\chartJS_lib\\JAS.ChartJs.Blazor\\BlazorChartJsWrapper.Demo\\BlazorChartJsWrapper.Demo.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\schneiderj\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\schneiderj\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\schneiderj\\.nuget\\packages\\microsoft.jsinterop\\7.0.2\\microsoft.jsinterop.7.0.2.nupkg.sha512",
+    "C:\\Users\\schneiderj\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
     "C:\\Users\\schneiderj\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
   ],
   "logs": []
