@@ -15,3 +15,4 @@ namespace ChartJsWrapper.Common.Options
         public Easing Easing { get; set; }
 
     }
+}
