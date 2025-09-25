@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    internal class Weights
+    public class Weights
     {
         public static readonly Weights Normal = new("normal");
         public static readonly Weights Bold = new("bold");

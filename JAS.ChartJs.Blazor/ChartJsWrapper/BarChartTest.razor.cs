@@ -8,7 +8,7 @@ using Microsoft.JSInterop;
 
 namespace ChartJsWrapper
 {
-    public partial class BarChart
+    public partial class BarChartTest
     {
         [Parameter] public string CanvasId { get; set; } = $"chart-{Guid.NewGuid()}";
         [Parameter] public object? Config { get; set; }

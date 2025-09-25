@@ -3,7 +3,7 @@ using ChartJsWrapper.Common;
 
 namespace ChartJsWrapper.BarChart
 {
-    public class BarConfig : ChartConfigBase<BarOptions>
+    public class BarConfig : ChartConfigBase<BarOptions, ChartData>
     {
         /// <summary>
         /// Creates a new instance of the <see cref="BarConfig"/> class.
@@ -16,4 +16,5 @@ namespace ChartJsWrapper.BarChart
         /// </param>
         public BarConfig(bool horizontal = false) : base(horizontal ? ChartType.HorizontalBar : ChartType.Bar) { }
     }
+
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    internal class BorderJoinStyle : StringEnum
+    public class BorderJoinStyle : StringEnum
     {
         public static BorderJoinStyle Bevel => new BorderJoinStyle("bevel");
 

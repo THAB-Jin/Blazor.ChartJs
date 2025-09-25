@@ -1,18 +1,22 @@
 ﻿@page "/"
+@using ChartJsWrapper.BarChart
+@using ChartJsWrapper.Common
+@using ChartJsWrapper.Common.Options
+@using ChartJsWrapper.Util
 
 
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
 
-<Component1></Component1>
+@*<Component1></Component1>
 <Component2></Component2>
 <PieChart></PieChart>
-<BarChart CanvasId="barChart" Config="@BarConfig"> </BarChart>
-
+<BarChartTest CanvasId="barChart" Config="@BarConfigTest"> </BarChartTest>*@
+<Chart Config="_config"></Chart>
 
 @code {
-    private object BarConfig = new
+    private object BarConfigTest = new
     {
         type = "bar",
         data = new
@@ -40,4 +44,41 @@
         },
         options = new { responsive = true }
     };
+
+    private BarConfig _config;
+
+    protected override void OnInitialized()
+    {
+        _config = new BarConfig
+            {
+                Options = new BarOptions
+                {
+                    Responsive = true,
+                    Title = new Title
+                    {
+                        Display = true,
+                        Text = "ChartJs.Blazor Pie Chart"
+                    }
+                }
+            };
+
+        foreach (string color in new[] { "Red", "Yellow", "Green", "Blue" })
+        {
+            _config.Data.Labels.Add(color);
+        }
+
+        BarDataset<int> dataset = new BarDataset<int>(new[] { 6, 5, 3, 7 })
+            {
+                BackgroundColor = new[]
+                {
+            ColorUtil.ColorHexString(255, 99, 132), // Slice 1 aka "Red"
+            ColorUtil.ColorHexString(255, 205, 86), // Slice 2 aka "Yellow"
+            ColorUtil.ColorHexString(75, 192, 192), // Slice 3 aka "Green"
+            ColorUtil.ColorHexString(54, 162, 235), // Slice 4 aka "Blue"
+        }
+            };
+
+        _config.Data.Datasets.Add(dataset);
+    }
+
 }
