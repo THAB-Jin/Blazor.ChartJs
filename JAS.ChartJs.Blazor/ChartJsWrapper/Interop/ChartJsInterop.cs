@@ -8,7 +8,7 @@ using ChartJsWrapper.Util;
 
 namespace ChartJsWrapper.Interop
 {
-    internal static class ChartJsInterop
+    internal static class ChartJsInteropgit s
     {
         private const string ChartJsInteropName = "ChartJsInterop";
 
