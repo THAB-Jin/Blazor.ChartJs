@@ -1,6 +1,6 @@
-﻿using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.Common.Axes.Ticks
+namespace ChartJsWrapper.Common.Axes.Ticks
 {
     /// <summary>
     /// The ticks-subconfig of a <see cref="TimeAxis"/>.

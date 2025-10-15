@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.PieChart
+namespace ChartJsWrapper.PieChart
 {
     /// <summary>
     /// Represents the config for a pie chart.

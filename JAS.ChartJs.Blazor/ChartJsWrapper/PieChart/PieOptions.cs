@@ -1,6 +1,6 @@
-﻿using ChartJs.Blazor.Common;
+﻿using ChartJsWrapper.Common;
 
-namespace ChartJs.Blazor.PieChart
+namespace ChartJsWrapper.PieChart
 {
     /// <summary>
     /// The options-subconfig of a <see cref="PieConfig"/>.

@@ -1,8 +1,8 @@
 ﻿using System;
-using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Axes;
+using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Axes;
 
-namespace ChartJs.Blazor.PolarAreaChart
+namespace ChartJsWrapper.PolarAreaChart
 {
     /// <summary>
     /// The options-subconfig of a <see cref="PolarAreaConfig"/>.

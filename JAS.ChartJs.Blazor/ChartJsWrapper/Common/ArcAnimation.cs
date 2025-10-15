@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common
+﻿namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The animation-subconfig of the options for a radial chart.

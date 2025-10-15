@@ -1,4 +1,4 @@
-﻿using ChartJs.Blazor.Util;
+﻿using ChartJsWrapper.Util;
 
 namespace ChartJs.Blazor.Common.Axes
 {

@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Axes;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Axes;
 
-namespace ChartJs.Blazor.RadarChart
+namespace ChartJsWrapper.RadarChart
 {
     /// <summary>
     /// Represents the options-subconfig of a <see cref="RadarConfig"/>.

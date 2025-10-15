@@ -1,11 +1,11 @@
 ﻿using System;
-using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.LineChart;
-using ChartJs.Blazor.Util;
+using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.LineChart;
+using ChartJsWrapper.Util;
 using System.Collections.Generic;
 
-namespace ChartJs.Blazor.RadarChart
+namespace ChartJsWrapper.RadarChart
 {
     /// <inheritdoc/>
     public class RadarDataset : RadarDataset<double>

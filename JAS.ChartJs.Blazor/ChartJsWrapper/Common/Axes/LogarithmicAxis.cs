@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Axes.Ticks;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Axes.Ticks;
 
-namespace ChartJs.Blazor.Common.Axes
+namespace ChartJsWrapper.Common.Axes
 {
     /// <summary>
     /// The logarithmic scale is use to chart numerical data. It can be placed on either the x or y axis.

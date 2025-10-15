@@ -1,10 +1,10 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Handlers;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Handlers;
 using System;
 using System.Collections.Generic;
-using ChartJs.Blazor.Interop;
+using ChartJsWrapper.Interop;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The base config for the options-subconfig of a chart.

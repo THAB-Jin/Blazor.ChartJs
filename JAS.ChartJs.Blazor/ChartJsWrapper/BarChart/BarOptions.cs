@@ -1,4 +1,4 @@
-﻿using ChartJsWrapper.Common.Options;
+﻿using ChartJsWrapper.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

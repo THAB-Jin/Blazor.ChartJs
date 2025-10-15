@@ -8,37 +8,38 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common
 {
-    public abstract class ChartConfigBase
-    {
-        protected ChartConfigBase(ChartType chartType)
-        {
-            Type = chartType;
-        }
-        public ChartType Type { get; }
-        public string CanvasId { get; } = Guid.NewGuid().ToString();
-    }
+    //deprecated in favor of ChartConfig
+    //public abstract class ChartConfigBase
+    //{
+    //    protected ChartConfigBase(ChartType chartType)
+    //    {
+    //        Type = chartType;
+    //    }
+    //    public ChartType Type { get; }
+    //    public string CanvasId { get; } = Guid.NewGuid().ToString();
+    //}
 
 
-    public abstract class ChartConfigBase<TOptions, TData> : ChartConfigBase
-    //where constraints :
-    //TOptions must inherit from BaseConfigOptions.
-    //TData must inherit from ChartData and have a new() constructor.
-    where TOptions : BaseConfigOptions
-    where TData : ChartData, new()
-    {
-        protected ChartConfigBase(ChartType chartType) : base(chartType)
-        {
-            Data = new TData();
-        }
+    //public abstract class ChartConfigBase<TOptions, TData> : ChartConfigBase
+    ////where constraints :
+    ////TOptions must inherit from BaseConfigOptions.
+    ////TData must inherit from ChartData and have a new() constructor.
+    //where TOptions : BaseConfigOptions
+    //where TData : ChartData, new()
+    //{
+    //    protected ChartConfigBase(ChartType chartType) : base(chartType)
+    //    {
+    //        Data = new TData();
+    //    }
 
-        public TOptions Options { get; set; }
-        public TData Data { get; }
-    }
+    //    public TOptions Options { get; set; }
+    //    public TData Data { get; }
+    //}
 
-    public abstract class ChartConfigBase<TOptions> : ChartConfigBase
-        where TOptions : BaseConfigOptions
-    {
-        protected ChartConfigBase(ChartType chartType) : base(chartType) { }
-    }
+    //public abstract class ChartConfigBase<TOptions> : ChartConfigBase
+    //    where TOptions : BaseConfigOptions
+    //{
+    //    protected ChartConfigBase(ChartType chartType) : base(chartType) { }
+    //}
 
 }

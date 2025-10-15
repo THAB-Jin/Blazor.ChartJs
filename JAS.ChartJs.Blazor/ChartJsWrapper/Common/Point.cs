@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// Represents a point on a plane with an X and a Y-value.

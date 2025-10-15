@@ -1,6 +1,6 @@
-﻿using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The animation-subconfig of <see cref="BaseConfigOptions"/>.

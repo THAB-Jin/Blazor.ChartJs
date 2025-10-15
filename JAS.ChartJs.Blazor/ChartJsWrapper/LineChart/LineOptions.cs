@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Axes;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Axes;
 
-namespace ChartJs.Blazor.LineChart
+namespace ChartJsWrapper.LineChart
 {
     /// <summary>
     /// The options-subconfig of a <see cref="LineConfig"/>

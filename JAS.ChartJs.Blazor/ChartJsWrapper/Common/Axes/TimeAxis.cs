@@ -1,8 +1,8 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Axes.Ticks;
-using ChartJs.Blazor.Common.Time;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Axes.Ticks;
+using ChartJsWrapper.Common.Time;
 
-namespace ChartJs.Blazor.Common.Axes
+namespace ChartJsWrapper.Common.Axes
 {
     /// <summary>
     /// The time scale is used to display times and dates.

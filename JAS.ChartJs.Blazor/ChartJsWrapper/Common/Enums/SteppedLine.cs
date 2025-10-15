@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common.Enums
+﻿namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// As per documentation <a href="https://www.chartjs.org/docs/latest/charts/line.html#stepped-line">here (Chart.js)</a>.

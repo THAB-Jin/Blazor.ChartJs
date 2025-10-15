@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ChartJs.Blazor.Common.Enums
+namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// The filling mode is used in area charts (like line and radar) to define how the area around

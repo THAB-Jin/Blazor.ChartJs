@@ -1,9 +1,9 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Handlers;
-using ChartJs.Blazor.Util;
-using ChartJs.Blazor.Interop;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Handlers;
+using ChartJsWrapper.Util;
+using ChartJsWrapper.Interop;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The legend label configuration is nested below the legend configuration

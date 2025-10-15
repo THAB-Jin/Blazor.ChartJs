@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ChartJs.Blazor.Common.Time
+namespace ChartJsWrapper.Common.Time
 {
     /// <summary>
     /// Represents a point on a plane with an X and a Y-value where the

@@ -1,4 +1,5 @@
 ﻿using ChartJsWrapper.Common.Enums;
+using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.Text;
 
@@ -14,12 +15,6 @@ namespace ChartJsWrapper.Common
         public string datasetId { get; }
         public ChartType Type { get; }
         public IReadOnlyList<T> Data { get; }
-
-        /// <summary>
-        /// Gets the <see cref="ChartType"/> this dataset is for.
-        /// Important to set in mixed charts.
-        /// </summary>
-        public ChartType Type { get; }
 
         /// <summary>
         /// Creates a new <see cref="Dataset{T}"/>.

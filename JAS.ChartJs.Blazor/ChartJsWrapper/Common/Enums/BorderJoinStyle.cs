@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    public class BorderJoinStyle : StringEnum
     /// <summary>
     /// Specifies the border join style.
     /// <para>As per documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin">here (MDN)</a>.</para>

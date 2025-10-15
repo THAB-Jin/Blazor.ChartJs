@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     internal abstract class JsonWriteOnlyConverter<T> : JsonConverter<T>
     {

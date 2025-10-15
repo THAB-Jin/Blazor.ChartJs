@@ -1,8 +1,7 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Axes.Ticks;
-using ChartJs.Blazor.LineChart;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Axes.Ticks;
 
-namespace ChartJs.Blazor.Common.Axes
+namespace ChartJsWrapper.Common.Axes
 {
     /// <summary>
     /// This axis is to be used when you want to display <see cref="string"/> values for an axis.

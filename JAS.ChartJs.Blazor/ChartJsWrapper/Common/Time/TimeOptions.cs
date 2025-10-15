@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChartJs.Blazor.Common.Enums;
+using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.Common.Time
+namespace ChartJsWrapper.Common.Time
 {
     /// <summary>
     /// As per documentation <a href="https://www.chartjs.org/docs/latest/axes/cartesian/time.html#configuration-options">here (Chart.js)</a>.

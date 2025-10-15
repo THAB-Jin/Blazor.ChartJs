@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ChartJs.Blazor.Common.Axes.Ticks
+namespace ChartJsWrapper.Common.Axes.Ticks
 {
     /// <summary>
     /// The ticks-subconfig of <see cref="CategoryAxis"/>.

@@ -1,5 +1,5 @@
 ﻿
-namespace ChartJs.Blazor.Common.Axes.Ticks
+namespace ChartJsWrapper.Common.Axes.Ticks
 {
     /// <summary>
     /// The ticks-subconfig of <see cref="LogarithmicAxis"/>. It has the same members as <see cref="CartesianTicks"/>.

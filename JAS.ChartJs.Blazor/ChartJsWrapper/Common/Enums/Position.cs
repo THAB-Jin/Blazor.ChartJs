@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common.Enums
+﻿namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// Represents a relative direction or position on a 2D canvas.

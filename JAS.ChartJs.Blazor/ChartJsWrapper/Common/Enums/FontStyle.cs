@@ -1,4 +1,4 @@
-namespace ChartJs.Blazor.Common.Enums
+namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// Specifies the css font style of text.

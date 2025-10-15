@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Util;
+using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Util;
 
-namespace ChartJs.Blazor.PieChart
+namespace ChartJsWrapper.PieChart
 {
     /// <inheritdoc/>
     public class PieDataset : PieDataset<double>

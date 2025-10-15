@@ -1,6 +1,6 @@
-﻿using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The tooltips-subconfig of the common options (applies to all charts).

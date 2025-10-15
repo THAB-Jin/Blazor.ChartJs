@@ -1,8 +1,8 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Handlers;
-using ChartJs.Blazor.Interop;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Handlers;
+using ChartJsWrapper.Interop;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The chart legend displays data about the datasets that are appearing on the chart.

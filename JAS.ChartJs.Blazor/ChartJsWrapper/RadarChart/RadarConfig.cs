@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.RadarChart
+namespace ChartJsWrapper.RadarChart
 {
     /// <summary>
     /// Represents the config for a radar chart.

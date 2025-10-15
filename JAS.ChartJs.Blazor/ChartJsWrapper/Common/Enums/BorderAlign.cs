@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common.Enums
+﻿namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// Specifies the border alignment of a pie chart and a polar area chart.

@@ -8,6 +8,7 @@ namespace ChartJsWrapper.Common.Enums
 {
     public class Positions
     {
+        //alternativley use Position???
         public static readonly Positions Top = new("top");
         public static readonly Positions Left = new("left");
         public static readonly Positions Bottom = new("bottom");

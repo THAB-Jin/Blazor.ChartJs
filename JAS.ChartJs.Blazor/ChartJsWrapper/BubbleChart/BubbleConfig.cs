@@ -1,5 +1,5 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
 
 namespace ChartJsWrapper.BubbleChart
 {

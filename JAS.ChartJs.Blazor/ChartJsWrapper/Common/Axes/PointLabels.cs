@@ -1,8 +1,8 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Util;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Util;
 
-namespace ChartJs.Blazor.Common.Axes
+namespace ChartJsWrapper.Common.Axes
 {
     /// <summary>
     /// The point labels sub-config of the linear-radial-axis-configuration (see <see cref="LinearRadialAxis"/>).

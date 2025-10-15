@@ -1,6 +1,6 @@
-﻿using ChartJs.Blazor.Common.Enums;
+﻿using ChartJsWrapper.Common.Enums;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The model of the legend items which are displayed in the chart-legend.

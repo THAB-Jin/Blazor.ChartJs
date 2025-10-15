@@ -1,6 +1,7 @@
-﻿using ChartJs.Blazor.Common.Axes.Ticks;
+﻿using ChartJsWrapper.Common.Axes.Ticks;
+using ChartJs.Blazor.Common.Axes;
 
-namespace ChartJs.Blazor.Common.Axes
+namespace ChartJsWrapper.Common.Axes
 {
     /// <summary>
     /// A linear radial axis.

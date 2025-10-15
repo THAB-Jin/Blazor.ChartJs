@@ -1,11 +1,9 @@
-﻿using ChartJs.Blazor.Common;
+﻿using ChartJsWrapper.Common;
 using Microsoft.JSInterop;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
 using System.Dynamic;
-using ChartJsWrapper.Common;
 using ChartJsWrapper.Util;
 
 namespace ChartJsWrapper.Interop

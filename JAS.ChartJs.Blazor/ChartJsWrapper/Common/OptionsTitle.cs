@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Util;
+﻿using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Util;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The title-subconfig of <see cref="BaseConfigOptions"/>. Specifies how the chart title is displayed.

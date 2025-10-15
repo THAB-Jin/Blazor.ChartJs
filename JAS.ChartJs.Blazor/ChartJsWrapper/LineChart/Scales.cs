@@ -1,8 +1,8 @@
-﻿using ChartJs.Blazor.Common.Axes;
+﻿using ChartJsWrapper.Common.Axes;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace ChartJs.Blazor.LineChart
+namespace ChartJsWrapper.LineChart
 {
     /// <summary>
     /// Defines the scales for cartesian charts by holding the x and y axes.

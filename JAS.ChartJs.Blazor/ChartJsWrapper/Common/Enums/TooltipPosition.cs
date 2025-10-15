@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    public sealed class TooltipPosition
     /// <summary>
     /// Specifies where the tooltip will be displayed.
     /// <para>As per documentation <a href="https://www.chartjs.org/docs/latest/configuration/tooltip.html#position-modes">here (Chart.js)</a>.</para>

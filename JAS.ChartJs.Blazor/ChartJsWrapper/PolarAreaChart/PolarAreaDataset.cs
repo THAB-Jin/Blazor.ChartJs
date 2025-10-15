@@ -1,11 +1,11 @@
 ﻿using System;
-using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.PieChart;
-using ChartJs.Blazor.Util;
+using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.PieChart;
+using ChartJsWrapper.Util;
 using System.Collections.Generic;
 
-namespace ChartJs.Blazor.PolarAreaChart
+namespace ChartJsWrapper.PolarAreaChart
 {
     /// <inheritdoc/>
     public class PolarAreaDataset : PolarAreaDataset<double>

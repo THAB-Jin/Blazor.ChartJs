@@ -1,7 +1,7 @@
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Common.Handlers;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Common.Handlers;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The hover configuration contains general settings regarding hovering over a chart.

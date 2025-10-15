@@ -1,8 +1,8 @@
-using ChartJs.Blazor.Common.Enums;
+using ChartJsWrapper.Common.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace ChartJs.Blazor.Common
+namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// Base class for chart-configs

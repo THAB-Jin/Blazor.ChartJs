@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common
+﻿namespace ChartJsWrapper.Common
 {
     /// <summary>
     /// The padding to add to the chart.

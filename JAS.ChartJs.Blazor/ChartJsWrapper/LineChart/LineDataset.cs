@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Common.Enums;
-using ChartJs.Blazor.Util;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Common.Enums;
+using ChartJsWrapper.Util;
 using Newtonsoft.Json;
 
-namespace ChartJs.Blazor.LineChart
+namespace ChartJsWrapper.LineChart
 {
     /// <summary>
     /// Represents a dataset for a line chart.

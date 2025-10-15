@@ -1,4 +1,4 @@
-﻿namespace ChartJs.Blazor.Common.Enums
+﻿namespace ChartJsWrapper.Common.Enums
 {
     /// <summary>
     /// As per documentation <a href="https://www.chartjs.org/docs/latest/axes/cartesian/time.html#scale-distribution">here (Chart.js)</a>.

@@ -1,7 +1,7 @@
-﻿using ChartJs.Blazor.Common;
-using ChartJs.Blazor.Util;
+﻿using ChartJsWrapper.Common;
+using ChartJsWrapper.Util;
 
-namespace ChartJs.Blazor.Common.Axes.Ticks
+namespace ChartJsWrapper.Common.Axes.Ticks
 {
     /// <summary>
     /// The ticks sub-config of the <see cref="LinearRadialAxis"/>.
