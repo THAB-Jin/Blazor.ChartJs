@@ -1,0 +1,41 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = ChartJsWrapper
+build_property.RootNamespace = ChartJsWrapper
+build_property.ProjectDir = C:\Workplace\KM\MDE_MMS\chartJS_lib\JAS.ChartJs.Blazor\ChartJsWrapper\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Workplace\KM\MDE_MMS\chartJS_lib\JAS.ChartJs.Blazor\ChartJsWrapper
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/BarChartTest.razor]
+build_metadata.AdditionalFiles.TargetPath = QmFyQ2hhcnRUZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/Chart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/Component2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50Mi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/PieChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGllQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workplace/KM/MDE_MMS/chartJS_lib/JAS.ChartJs.Blazor/ChartJsWrapper/Component1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sw7iglw4w1
