@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
+    /// <summary>
+    /// Represents a browser event. Not all browser events are listed
+    /// as properties but you can use <see cref="Custom"/> to create
+    /// events that aren't listed as static properties.
+    /// <para>
+    /// Reference for browser events can be found here:
+    /// <a href="https://developer.mozilla.org/en-US/docs/Web/Events"/>
+    /// </para>
+    /// </summary>
     public sealed class BrowserEvent : StringEnum
     {
         /// <summary>

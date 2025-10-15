@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.BarChart
 {
+    /// <summary>
+    /// The bar thickness used to customize all bar axes (extended cartesian axes in <see cref="ChartJs.Blazor.BarChart.Axes"/>).
+    /// <para>As per documentation <a href="https://www.chartjs.org/docs/latest/charts/bar.html#barthickness">here (Chart.js)</a>.</para>
+    /// </summary>
     public class BarThickness : ObjectEnum
     {
         /// <summary>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BlazorChartJsWrapper.Demo.props" />
+</Project>

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Util
 {
+    /// <summary>
+    /// This class contains extensions for the <see cref="ExpandoObject"/> type which allows for easier access and modification particularly when nested.
+    /// </summary>
     internal static class ExpandoObjectExtensions
     {
         /// <summary>

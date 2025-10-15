@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Axes.Ticks
 {
+    /// <summary>
+    /// The base class for all tick mark configurations of cartesian axes (see <see cref="CartesianAxis"/>). Ticks-subconfig of <see cref="CartesianAxis"/>.
+    /// <para>As per documentation <a href="https://www.chartjs.org/docs/latest/axes/cartesian/#tick-configuration">here (Chart.js)</a>.</para>
+    /// </summary>
     public abstract class CartesianTicks : Ticks
     {
         /// <summary>

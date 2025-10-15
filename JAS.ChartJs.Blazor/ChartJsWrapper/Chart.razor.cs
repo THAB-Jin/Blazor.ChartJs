@@ -6,9 +6,14 @@ using ChartJsWrapper.Interop;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
+using System;
+using System.Threading.Tasks;
 
 namespace ChartJsWrapper
 {
+    /// <summary>
+    /// Represents a Chart.js chart.
+    /// </summary>
     public partial class Chart
     {
         /// <summary>
@@ -29,7 +34,7 @@ namespace ChartJsWrapper
         /// Gets or sets the configuration of the chart.
         /// </summary>
         [Parameter]
-        public ChartConfigBase Config { get; set; }
+        public ConfigBase Config { get; set; }
 
         /// <summary>
         /// Gets or sets the width of the canvas HTML element.

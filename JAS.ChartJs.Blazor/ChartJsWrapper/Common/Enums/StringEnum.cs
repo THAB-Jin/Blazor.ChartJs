@@ -2,8 +2,10 @@
 
 namespace ChartJsWrapper.Common.Enums
 {
+    /// <summary>
     /// The base class for enums that are meant to be serialized. They are more flexible
     /// than normal C# enums (through type safe enum pattern).
+    /// <para>
     /// When implementing a <see cref="StringEnum"/>, make sure to only implement a single
     /// constructor that takes a single <see cref="string"/>. Make this constructor private!
     /// The actual enum values are static properties that pass the correct value to the private
@@ -13,6 +15,8 @@ namespace ChartJsWrapper.Common.Enums
     /// In the rare case that you need a <see cref="StringEnum"/> that can contain any
     /// <see cref="string"/> value, expose a static factory method but don't make the constructor
     /// public. Also consider sealing your enum unless you have a specific reason not to.
+    /// </para>
+    /// </summary>
     [Newtonsoft.Json.JsonConverter(typeof(Serialization.JsonStringEnumConverter))]
     public abstract class StringEnum : IEquatable<StringEnum>
     {
@@ -80,6 +84,7 @@ namespace ChartJsWrapper.Common.Enums
         /// <returns>The underlying <see cref="string"/> value.</returns>
         public override string ToString() => _value;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public static bool operator ==(StringEnum left, StringEnum right) =>
             left?._value == right?._value;
 
@@ -87,5 +92,6 @@ namespace ChartJsWrapper.Common.Enums
             left?._value != right?._value;
 
         public static explicit operator string(StringEnum stringEnum) => stringEnum._value;
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

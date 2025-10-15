@@ -8,6 +8,10 @@ using ChartJsWrapper.Common.Handlers;
 
 namespace ChartJsWrapper.Common.Axes.Ticks
 {
+    /// <summary>
+    /// The base class for all tick mark configurations. Ticks-subconfig of the common <see cref="Axis"/>.
+    /// <para>As per documentation <a href="https://www.chartjs.org/docs/latest/axes/styling.html#tick-configuration">here (Chart.js)</a>.</para>
+    /// </summary>
     public abstract class Ticks : SubTicks
     {
         /// <summary>

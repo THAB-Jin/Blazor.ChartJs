@@ -3,7 +3,8 @@ using ChartJsWrapper.Common;
 
 namespace ChartJsWrapper.BarChart
 {
-    public class BarConfig : ChartConfigBase<BarOptions, ChartData>
+    ///Changed from ChartConfigBase
+    public class BarConfig : ConfigBase<BarOptions>
     {
         /// <summary>
         /// Creates a new instance of the <see cref="BarConfig"/> class.

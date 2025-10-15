@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Enums
 {
-    // The base class for enums that can represent different types. We also use these
+    /// <summary>
+    /// The base class for enums that can represent different types. We also use these
+    /// "enums" like Discriminated Unions to provide a type safe way of communicating with the
+    /// dynamic language JavaScript is.
+    /// <para>
+    /// De-/serialization is supported but only for the following types:
+    /// <see cref="int"/>, <see cref="double"/>, <see cref="string"/> and <see cref="bool"/>.
+    /// For the deserialization, the constructors with a single parameter of a supported type
+    /// are considered for instantiating the object enum.
+    /// </para>
+    /// <para>
+    /// When implementing an object enum, make sure to provide only private constructors
+    /// with the types that are allowed (DO NOT expose public constructors; expose meaningful
+    /// static factory methods instead). The actual enum values are static properties that pass
+    /// the correct value to the private constructor. Make these properties return new values
+    /// everytime so we don't create all the enum values even though we don't use them.
+    /// In the classic use case, we don't call many of these properties anyway and usually
+    /// only a few times. You can also have static factory methods that
+    /// create an instance of the object enum with the specified value as long as the parameter
+    /// type is supported. Also consider sealing your enum unless you have a specific reason not to.
+    /// </para>
+    /// </summary>
     [Newtonsoft.Json.JsonConverter(typeof(Serialization.JsonObjectEnumConverter))]
     public abstract class ObjectEnum : IEquatable<ObjectEnum>
     {
@@ -96,9 +117,11 @@ namespace ChartJsWrapper.Common.Enums
         /// <returns>The <see cref="string"/> representation of the underlying object.</returns>
         public override string ToString() => Value.ToString();
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public static bool operator ==(ObjectEnum left, ObjectEnum right) =>
             EqualityComparer<object>.Default.Equals(left?.Value, right?.Value);
 
         public static bool operator !=(ObjectEnum left, ObjectEnum right) => !(left == right);
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

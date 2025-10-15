@@ -7,12 +7,19 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common
 {
+    /// <summary>
+    /// Represents a dataset with an id and a type.
+    /// </summary>
     public interface IDataset
     {
         string datasetId { get; }
         ChartType Type { get; }
     }
 
+    /// <summary>
+    /// Represents a strongly typed dataset that holds data of type <typeparamref name="T"/>.
+    /// </summary>
+    /// <typeparam name="T">The type of data this dataset contains.</typeparam>
     public interface IDataset<T> : IDataset, IList<T>
     {
         /// <summary>

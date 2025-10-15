@@ -1,4 +1,6 @@
-﻿using Microsoft.JSInterop;
+﻿using ChartJs.Blazor.Common;
+using Microsoft.JSInterop;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
@@ -8,7 +10,10 @@ using ChartJsWrapper.Util;
 
 namespace ChartJsWrapper.Interop
 {
-    internal static class ChartJsInteropgit s
+    /// <summary>
+    /// Interop layer from C# to JavaScript.
+    /// </summary>
+    internal static class ChartJsInterop
     {
         private const string ChartJsInteropName = "ChartJsInterop";
 
@@ -31,7 +36,7 @@ namespace ChartJsWrapper.Interop
         /// <param name="jsRuntime"></param>
         /// <param name="chartConfig">The config for the new chart.</param>
         /// <returns></returns>
-        public static ValueTask<bool> SetupChart(this IJSRuntime jsRuntime, ChartConfigBase chartConfig)
+        public static ValueTask<bool> SetupChart(this IJSRuntime jsRuntime, ConfigBase chartConfig)
         {
             dynamic dynParam = StripNulls(chartConfig);
             Dictionary<string, object> param = ConvertExpandoObjectToDictionary(dynParam);
@@ -86,7 +91,7 @@ namespace ChartJsWrapper.Interop
         /// <param name="jsRuntime"></param>
         /// <param name="chartConfig">The updated config of the chart you want to update.</param>
         /// <returns></returns>
-        public static ValueTask<bool> UpdateChart(this IJSRuntime jsRuntime, ChartConfigBase chartConfig)
+        public static ValueTask<bool> UpdateChart(this IJSRuntime jsRuntime, ConfigBase chartConfig)
         {
             dynamic dynParam = StripNulls(chartConfig);
             Dictionary<string, object> param = ConvertExpandoObjectToDictionary(dynParam);
@@ -106,7 +111,7 @@ namespace ChartJsWrapper.Interop
         /// </summary>
         /// <param name="chartConfig">The config you want to strip of null members.</param>
         /// <returns></returns>
-        private static ExpandoObject StripNulls(ChartConfigBase chartConfig)
+        private static ExpandoObject StripNulls(ConfigBase chartConfig)
         {
             // Serializing with the custom serializer settings remove null members
             string cleanChartConfigStr = JsonConvert.SerializeObject(chartConfig, JsonSerializerSettings);

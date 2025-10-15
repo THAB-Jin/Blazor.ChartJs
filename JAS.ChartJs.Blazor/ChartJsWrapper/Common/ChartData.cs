@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common
 {
+    /// <summary>
+    /// Represents the data-subconfig of any <see cref="ConfigBase"/>.
+    /// </summary>
     public class ChartData
     {
             public List<string> Labels { get; } = new List<string>();

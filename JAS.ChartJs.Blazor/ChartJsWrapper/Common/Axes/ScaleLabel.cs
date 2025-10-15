@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Axes
 {
+    /// <summary>
+    /// Defines options for how to display an axis title.
+    /// </summary>
     public class ScaleLabel
     {
         /// <summary>

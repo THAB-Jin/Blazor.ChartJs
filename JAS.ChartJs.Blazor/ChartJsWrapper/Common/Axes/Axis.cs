@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChartJsWrapper.Common.Axes
 {
+    /// <summary>
+    /// As per documentation <a href="https://www.chartjs.org/docs/latest/axes/#common-configuration">here (Chart.js)</a>.
+    /// </summary>
     public abstract class Axis
     {
         /// <summary>

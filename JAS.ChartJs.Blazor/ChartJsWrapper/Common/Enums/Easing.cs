@@ -1,7 +1,15 @@
 ﻿namespace ChartJsWrapper.Common.Enums
 {
+    /// <summary>
+    /// Represents an easing function supported by Chart.js. Details about the different
+    /// functions can be found here: <a href="https://easings.net"/>
+    /// <para>
+    /// As per documentation <a href="https://www.chartjs.org/docs/latest/configuration/animations.html#easing">here (Chart.js)</a>.
+    /// </para>
+    /// </summary>
     public sealed class Easing : StringEnum
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public static Easing Linear => new Easing("linear");
         public static Easing EaseInQuad => new Easing("easeInQuad");
         public static Easing EaseOutQuad => new Easing("easeOutQuad");
@@ -33,6 +41,7 @@
         public static Easing EaseInBounce => new Easing("easeInBounce");
         public static Easing EaseOutBounce => new Easing("easeOutBounce");
         public static Easing EaseInOutBounce => new Easing("easeInOutBounce");
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
         private Easing(string stringRep) : base(stringRep) { }
     }
