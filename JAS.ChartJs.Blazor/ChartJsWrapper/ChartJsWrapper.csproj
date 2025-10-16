@@ -16,4 +16,29 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
+    <!-- TypeScript Build Integration -->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.9.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <TypeScriptOutFile>wwwroot\ChartJsInterop.js</TypeScriptOutFile>
+        <TypeScriptTarget>ES2018</TypeScriptTarget>
+        <TypeScriptAlwaysStrict>true</TypeScriptAlwaysStrict>
+        <TypeScriptInclude>Interop\TypeScript\*.ts</TypeScriptInclude>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+        <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+        <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    </PropertyGroup>
+
 </Project>
