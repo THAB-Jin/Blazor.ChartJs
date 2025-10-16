@@ -1,7 +1,6 @@
 ﻿@page "/"
 @using ChartJsWrapper.BarChart
 @using ChartJsWrapper.Common
-@using ChartJsWrapper.Common.Options
 @using ChartJsWrapper.Util
 
 
@@ -16,35 +15,6 @@
 <Chart Config="_config"></Chart>
 
 @code {
-    private object BarConfigTest = new
-    {
-        type = "bar",
-        data = new
-        {
-            labels = new[] { "Red", "Blue", "Yellow", "Orange" },
-            datasets = new[]
-            {
-                new {
-                    label = "Votes",
-                    data = new[] { 12, 19, 3, 41 },
-                    backgroundColor = new[] { "rgba(255, 99, 132, 0.2)",
-                                               "rgba(255, 159, 64, 0.2)",
-                                               "rgba(255, 205, 86, 0.2)",
-                                               "rgba(75, 192, 192, 0.2)" 
-                    },
-                     borderColor = new[] {
-                                  "rgb(255, 99, 132)",
-                                  "rgb(255, 159, 64)",
-                                  "rgb(255, 205, 86)",
-                                  "rgb(75, 192, 192)"
-                     },
-                     borderWidth =  2
-                }
-        }
-        },
-        options = new { responsive = true }
-    };
-
     private BarConfig _config;
 
     protected override void OnInitialized()
@@ -54,12 +24,12 @@
                 Options = new BarOptions
                 {
                     Responsive = true,
-                    Title = new Title
+                    Title = new OptionsTitle //using OptionsTitle here -> would like to see if I can't use Options.Title instead
                     {
                         Display = true,
-                        Text = "ChartJs.Blazor Pie Chart"
+                        Text = "Custom Barchart"
                     }
-                }
+                },
             };
 
         foreach (string color in new[] { "Red", "Yellow", "Green", "Blue" })

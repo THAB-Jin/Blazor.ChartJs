@@ -10,6 +10,18 @@
 *.userosscache
 *.sln.docstates
 *.env
+*.vs
+*.cache
+*.db
+
+# Razor / Blazor temporary files
+*.razor.vs.json
+*.AssemblyReference.cache
+*.FileListAbsolute.txt
+
+# Build folders
+bin/
+obj/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,12 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChartJsWrapper\ChartJsWrapper.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="ChartJsWrapper">
-      <HintPath>..\ChartJsWrapper\bin\Debug\net7.0\ChartJsWrapper.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
